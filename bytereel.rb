@@ -1,5 +1,5 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
-class ByteReel < Formula
+class Bytereel < Formula
   desc "Coverts any file to a video"
   homepage "https://github.com/kaspar1ndustries/go-bytereel"
   
