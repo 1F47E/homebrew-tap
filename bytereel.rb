@@ -5,20 +5,20 @@
 class Bytereel < Formula
   desc "ByteReel converts any file to a video"
   homepage "https://github.com/kaspar1ndustries/go-bytereel"
-  version "0.209"
+  version "0.210"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kaspar1ndustries/go-bytereel/releases/download/v0.209/go-bytereel_Darwin_arm64.tar.gz"
-      sha256 "4098d57b034020607acba064a72938c0be60b58e443991b23ff460b237dd6287"
+      url "https://github.com/kaspar1ndustries/go-bytereel/releases/download/v0.210/go-bytereel_Darwin_arm64.tar.gz"
+      sha256 "4ac78f0c5b977aec07cedb96634f2372640b2b28a6cf4ecf6f0dc91cd0bcd11b"
 
       def install
         bin.install "bytereel"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kaspar1ndustries/go-bytereel/releases/download/v0.209/go-bytereel_Darwin_amd64.tar.gz"
-      sha256 "038079e4f8dc324a73906c76131f6968fd2583860907974e28ffc3bfbfe4bf54"
+      url "https://github.com/kaspar1ndustries/go-bytereel/releases/download/v0.210/go-bytereel_Darwin_amd64.tar.gz"
+      sha256 "636e2f189c7a10cd66321a599708b29046c4ec0600811241e7fb87907f264d3e"
 
       def install
         bin.install "bytereel"
@@ -28,16 +28,16 @@ class Bytereel < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kaspar1ndustries/go-bytereel/releases/download/v0.209/go-bytereel_Linux_arm64.tar.gz"
-      sha256 "c18452374e77d6b0c8d20953340a1766cdec8e2cfccd238a3f9c710aa3d59da3"
+      url "https://github.com/kaspar1ndustries/go-bytereel/releases/download/v0.210/go-bytereel_Linux_arm64.tar.gz"
+      sha256 "6980997244e6fc17dfbe58745d514aaa12ba1a998c1498bd1e88aa239f46f9c3"
 
       def install
         bin.install "bytereel"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/kaspar1ndustries/go-bytereel/releases/download/v0.209/go-bytereel_Linux_amd64.tar.gz"
-      sha256 "543a8b266ae61aa814b48973f1378169c37d72aaa5ea400300133da0ce774f23"
+      url "https://github.com/kaspar1ndustries/go-bytereel/releases/download/v0.210/go-bytereel_Linux_amd64.tar.gz"
+      sha256 "7df33f4c55ca1522be02d05363df42c5db8761ba9aecd75417c1f9593162c820"
 
       def install
         bin.install "bytereel"
