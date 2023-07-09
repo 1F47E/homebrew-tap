@@ -5,11 +5,11 @@ class Bytereel < Formula
   
   license ""
   if Hardware::CPU.intel?
-    url "https://github.com/kaspar1ndustries/go-bytereel/releases/download/v0.202/go-bytereel_Darwin_x86_64.tar.gz"
-    sha256 "7952612da5a82c4c8d8066038a0bfd05ba9cce3db904bbc026159682f3e0c5bc"
+    url "https://github.com/kaspar1ndustries/go-bytereel/releases/download/v0.203/go-bytereel_Darwin_x86_64.tar.gz"
+    sha256 "af6e8cdabce53361bab6105687707e4251df51ea65c4d2afc57116d44ce3ebfb"
   elsif Hardware::CPU.arm?
-    url "https://github.com/kaspar1ndustries/go-bytereel/releases/download/v0.202/go-bytereel_Darwin_arm64.tar.gz"
-    sha256 "b62f3c2a306cd7a94e50756af7006d0dcdf4777a2b2c7c57d27fa8e079021676"
+    url "https://github.com/kaspar1ndustries/go-bytereel/releases/download/v0.203/go-bytereel_Darwin_arm64.tar.gz"
+    sha256 "737500fe368fa6c603d16ecadc8ed39db6416208d51973ebeb4225cff50e8e61"
   end
 
 
