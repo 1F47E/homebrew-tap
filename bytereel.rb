@@ -14,10 +14,10 @@ class Bytereel < Formula
 
 
   def install
-    bin.install "app"
+    bin.install "bytereel"
   end
 
   test do
-    system "#{bin}/app", ""
+    system "#{bin}/bytereel", ""
   end
 end
