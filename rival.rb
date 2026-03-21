@@ -1,28 +1,28 @@
 class Rival < Formula
   desc "Dispatch prompts to Codex and Gemini CLIs from Claude Code with session tracking and TUI dashboard"
   homepage "https://github.com/1F47E/rival"
-  version "3.9.0"
+  version "3.10.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/1F47E/rival/releases/download/v3.9.0/rival_darwin_arm64.tar.gz"
-      sha256 "793786bd819a39be3838831579fb55dcea7a5b0daefaab52a871efd8ebb07742"
+      url "https://github.com/1F47E/rival/releases/download/v3.10.0/rival_darwin_arm64.tar.gz"
+      sha256 "8bce130ed39c98be434251c41fed989da893e1e6408a020bd7232b2d2dbab4f1"
     end
     on_intel do
-      url "https://github.com/1F47E/rival/releases/download/v3.9.0/rival_darwin_amd64.tar.gz"
-      sha256 "2122abd3cc5cd1ef3b8dafe79a2bac8cc3cec5b71d29b53543f9c053154a2009"
+      url "https://github.com/1F47E/rival/releases/download/v3.10.0/rival_darwin_amd64.tar.gz"
+      sha256 "ddbd0a26c91ce0307269e3c017037a3565554d0cc37724ec0c0a1df1067d5a70"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/1F47E/rival/releases/download/v3.9.0/rival_linux_arm64.tar.gz"
-      sha256 "f8f95260f71cbb3d60d06891f2eac82a32147a221ee8ed826d884e161ac84220"
+      url "https://github.com/1F47E/rival/releases/download/v3.10.0/rival_linux_arm64.tar.gz"
+      sha256 "921e9221ac3c97bb62d97738e4e9e178e82a307dcd6b2f33609c81800f6b2288"
     end
     on_intel do
-      url "https://github.com/1F47E/rival/releases/download/v3.9.0/rival_linux_amd64.tar.gz"
-      sha256 "5be2da06d74e0f7216b2ff95eece9d611628f648050fab1ce0b7db9c226d9d5c"
+      url "https://github.com/1F47E/rival/releases/download/v3.10.0/rival_linux_amd64.tar.gz"
+      sha256 "4a97a4cffc3a0c5dffd54e660a548c329fd091650bca7b9c2076c48c96905c48"
     end
   end
 
