@@ -5,21 +5,21 @@
 class Rival < Formula
   desc "Dispatch prompts to Codex, Antigravity, and Claude CLIs from Claude Code with session tracking and TUI/web dashboard"
   homepage "https://github.com/1F47E/rival"
-  version "3.14.1"
+  version "3.14.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/1F47E/rival/releases/download/v3.14.1/rival_darwin_amd64.tar.gz"
-      sha256 "341dfe5d66074ee348053eb1967bf6421e884f1a27c9c6a873417b85a16bd19c"
+      url "https://github.com/1F47E/rival/releases/download/v3.14.2/rival_darwin_amd64.tar.gz"
+      sha256 "851d44a874875b8787f0feb8b6cdf8c4358a620f019d6396abf36aedfe7969d7"
 
       define_method(:install) do
         bin.install "rival"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/1F47E/rival/releases/download/v3.14.1/rival_darwin_arm64.tar.gz"
-      sha256 "c748394a32f468247ca370997cb3d26cef65d1a97117699dca784078f018dd12"
+      url "https://github.com/1F47E/rival/releases/download/v3.14.2/rival_darwin_arm64.tar.gz"
+      sha256 "778744266a4b0ebd9fb813a7f02844a498c96ac2779dbf605d1ff35b56738c7d"
 
       define_method(:install) do
         bin.install "rival"
@@ -29,15 +29,15 @@ class Rival < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1F47E/rival/releases/download/v3.14.1/rival_linux_amd64.tar.gz"
-      sha256 "2e74bd79fc7efc529b30eb5f1e47122e8e7ec93593e03bd93f4d145ee6eddcfb"
+      url "https://github.com/1F47E/rival/releases/download/v3.14.2/rival_linux_amd64.tar.gz"
+      sha256 "fa6ed1922d4911ba75402d19c4bf1ec8b0020bdc666b70dbeb446d92e8d00463"
       define_method(:install) do
         bin.install "rival"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1F47E/rival/releases/download/v3.14.1/rival_linux_arm64.tar.gz"
-      sha256 "b356a605b6730d84bd6d81cd4042c7a2a0c98d29c4bb271b8eb988b785e7e546"
+      url "https://github.com/1F47E/rival/releases/download/v3.14.2/rival_linux_arm64.tar.gz"
+      sha256 "e83c0c5df7d6adfd24de56a75a6b3c9e5406b04cb8167aa1c5b2fafaff484a4c"
       define_method(:install) do
         bin.install "rival"
       end
