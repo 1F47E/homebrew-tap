@@ -5,21 +5,21 @@
 class Rival < Formula
   desc "Dispatch prompts to AI coding agents with session tracking and TUI/web dashboards"
   homepage "https://github.com/1F47E/rival"
-  version "3.30.0"
+  version "3.30.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/1F47E/rival/releases/download/v3.30.0/rival_darwin_amd64.tar.gz"
-      sha256 "97bb87ac76f7244a7767274ae7ccac3f2c6fb166fa6e99e2cac8537bc74b92e6"
+      url "https://github.com/1F47E/rival/releases/download/v3.30.1/rival_darwin_amd64.tar.gz"
+      sha256 "7bef22d17d7cc6bbed4dc92b76a96f01c8e2194c25c9c34191388957c0a32c6d"
 
       define_method(:install) do
         bin.install "rival"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/1F47E/rival/releases/download/v3.30.0/rival_darwin_arm64.tar.gz"
-      sha256 "0ba863d0af56493f5baa1d9a77321dd7feb701ce6562f3c321306f0bceeb74c5"
+      url "https://github.com/1F47E/rival/releases/download/v3.30.1/rival_darwin_arm64.tar.gz"
+      sha256 "49e9350966a77de9cc7a8e1eecd0249215d2a4aea05f76fef146639ab01e1899"
 
       define_method(:install) do
         bin.install "rival"
@@ -29,15 +29,15 @@ class Rival < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1F47E/rival/releases/download/v3.30.0/rival_linux_amd64.tar.gz"
-      sha256 "df2f69d018c83702f74f4cae4ce8670ca0a545153d5db5bff081393d382dd5b8"
+      url "https://github.com/1F47E/rival/releases/download/v3.30.1/rival_linux_amd64.tar.gz"
+      sha256 "29790e1c7d2ba5eba1d937ac13a79c5e248be1877591b2074575846d7dedab8a"
       define_method(:install) do
         bin.install "rival"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/1F47E/rival/releases/download/v3.30.0/rival_linux_arm64.tar.gz"
-      sha256 "c235d3dcfc938d1953717c58833a491c786650253b2c335ada4f6fc5dc3f8d83"
+      url "https://github.com/1F47E/rival/releases/download/v3.30.1/rival_linux_arm64.tar.gz"
+      sha256 "9cee81ccfb3ba680ae69749512c979c7dfdd401e5cc5396ce173c474e788d44d"
       define_method(:install) do
         bin.install "rival"
       end
